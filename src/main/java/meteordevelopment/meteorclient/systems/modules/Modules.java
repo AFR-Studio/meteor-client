@@ -31,6 +31,7 @@ import meteordevelopment.meteorclient.systems.modules.render.*;
 import meteordevelopment.meteorclient.systems.modules.render.blockesp.BlockESP;
 import meteordevelopment.meteorclient.systems.modules.render.marker.Marker;
 import meteordevelopment.meteorclient.systems.modules.world.*;
+import meteordevelopment.meteorclient.systems.modules.world.SearchLoadedChunk;
 import meteordevelopment.meteorclient.systems.modules.world.Timer;
 import meteordevelopment.meteorclient.utils.Utils;
 import meteordevelopment.meteorclient.utils.misc.Keybind;
@@ -78,6 +79,7 @@ public class Modules extends System<Modules> {
         initRender();
         initWorld();
         initMisc();
+        add(new SearchLoadedChunk());
     }
 
     @Override
